@@ -35,7 +35,7 @@ Just open index.html in your browser!
 
 Project Documentation
 Screenshots
-![Screenshot1](Add screenshot 1 here)
+![Screenshot1](https://github.com/Rahana-3633/al-_commenter/blob/main/Screenshot%202025-08-09%20073840.png)
 Shows the main input and response area.
 
 ![Screenshot2](Add screenshot 2 here)
@@ -62,4 +62,5 @@ Made with ❤️ at TinkerHub Useless Projects
 Tip:
 Add your screenshots, diagrams, and video links where indicated.
 Let me know if you want this in a specific format (Markdown, Word, etc.) or need more details!
+
 
