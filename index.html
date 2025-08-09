@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Useless Input Machine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Useless Input Machine!</h1>
+    <input type="text" id="userInput" placeholder="Type something useless..." />
+    <br>
+    <button type="button" onclick="giveFunnyResponse()">Submit</button>
+    <button type="button" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+    
+    <div class="response" id="funnyOutput">
+      <div id="responseText">Enter something and click Submit to see the magic! ✨</div>
+      <img id="funnyImage" src="" alt="Funny meme">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background: #f0f0f0;
+  transition: all 0.3s ease;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.dark-mode {
+  background: #2c2c2c !important;
+  color: #f0f0f0;
+}
+
+h1 {
+  color: #ff6b6b;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.dark-mode h1 {
+  color: #ff8a8a;
+}
+
+input {
+  padding: 15px;
+  font-size: 18px;
+  border: 3px solid #ff6b6b;
+  border-radius: 25px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  transform: scale(1.05);
+  border-color: #ff4757;
+  box-shadow: 0 0 15px rgba(255, 107, 107, 0.5);
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+button:focus {
+  outline: 2px solid #ff4757;
+  outline-offset: 2px;
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.response {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.dark-mode .response {
+  background: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+
+#responseText {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #2c2c2c;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.dark-mode #responseText {
+  color: #ffffff;
+}
+
+#funnyImage {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  animation: slideIn 0.5s ease-out;
+  display: none;
+  transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from { 
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to { 
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  input {
+    width: 80%;
+  }
+  .container {
+    padding: 20px;
+  }
+}
